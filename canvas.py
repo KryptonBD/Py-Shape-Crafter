@@ -16,6 +16,9 @@ class Canvas:
     self.data[:] = self.color #replace the zeros with color
 
   def create(self, image_path):
+    '''
+    Save the canvas to an image file
+    '''
     img = Image.fromarray(self.data, 'RGB')
     img.save(image_path)
  
